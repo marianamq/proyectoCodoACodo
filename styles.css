@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+}
+
+#uno, #tres {
+    height: 300px;
+    width: 300px;
+    margin: 5px;
+    background-color:#e07a5f;
+}
+
+#dos, #cuatro {
+    height: 300px;
+    width: 300px;
+    margin: 5px;
+    background-color: #3d405b;
+    color: white;
+}
+
+p{
+    font-size: 40px;
+    padding: 5px;
+}
