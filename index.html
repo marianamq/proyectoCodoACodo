@@ -10,65 +10,79 @@
 </head>
 <body>
   <div class="container">
-    <div class="row">
-      <div class="col-4">
-        <div class="card">
-          <img src="http://via.placeholder.com/100x50" alt="imagen-de-referencia">
-          <div class="card-body">
-            <p class="card-text text-left">
-              Esta es una tarjeta más amplia con texto de apoyo a continuación como una introducción
-              natural a contenido adicional. Este contenido es un poco más largo.
-            </p>
-          </div>
-          <div class="botones">
-            <div class="btn-group btn-group-sm" role="group">
-              <button type="button" class="btn btn-outline-dark">Ver</button>
-              <button type="button" class="btn btn-outline-dark">Editar</button>
-            </div>
-            <small class="text-muted">9 minutos</small>
-          </div>
+    <form> 
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="name">Nombre de pila</label>
+          <input type="text" class="form-control" id="name">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="lastname">Apellido</label>
+          <input type="text" class="form-control" id="lastname">
         </div>
       </div>
-      
-      <div class="col-4">
-        <div class="card">
-          <img src="http://via.placeholder.com/100x50" alt="imagen-de-referencia">
-          <div class="card-body">
-            <p class="card-text text-left">
-              Esta es una tarjeta más amplia con texto de apoyo a continuación como una introducción
-              natural a contenido adicional. Este contenido es un poco más largo.
-            </p>
+      <div class="form-group">
+        <label for="username">Nombre de Usuario</label>
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <div class="input-group-text">@</div>
           </div>
-          <div class="botones">
-            <div class="btn-group btn-group-sm" role="group">
-              <button type="button" class="btn btn-outline-dark">Ver</button>
-              <button type="button" class="btn btn-outline-dark">Editar</button>
-            </div>
-            <small class="text-muted">9 minutos</small>
-          </div>
+        <input type="text" class="form-control" id="username" placeholder="Nombre de Usuario">
+      </div>
+      <div class="form-group form_email">
+        <label for="email">Correo electrónico <p>(opcional)</p></label>
+        <input type="text" class="form-control" id="email" placeholder="you@example.com">
+      </div>
+      <div class="form-group">
+        <label for="address">Habla a</label>
+        <input type="text" class="form-control" id="address" placeholder="1234 Main St">
+      </div>
+      <div class="form-group form_email">
+        <label for="address2">Dirección 2 <p>(opcional)</p></label>
+        <input type="text" class="form-control" id="address2" placeholder="Apartamento o Suite">
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-5">
+          <label for="country">País</label>
+          <select class="custom-select" id="country">
+            <option selected>Escoger...</option>
+            <option value="1">Argentina</option>
+            <option value="2">Bolivia</option>
+            <option value="3">Brasil</option>
+            <option value="3">Chile</option>
+            <option value="3">Colombia</option>
+          </select>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="state">Estado</label>
+          <select class="custom-select" id="state">
+            <option selected>Escoger...</option>
+            <option value="1">Buenos Aires</option>
+            <option value="2">Sucre</option>
+            <option value="3">Brasilia</option>
+            <option value="3">Santiago de Chile</option>
+            <option value="3">Bogotá</option>
+          </select>
+        </div>
+        <div class="form-group col-md-3">
+          <label for="zipCode">Código Postal</label>
+          <input type="text" class="form-control" id="zipCode">
         </div>
       </div>
-  
-      <div class="col-4">
-        <div class="card">
-          <img src="http://via.placeholder.com/100x50" alt="imagen-de-referencia">
-          <div class="card-body">
-            <p class="card-text text-left">
-              Esta es una tarjeta más amplia con texto de apoyo a continuación como una introducción
-              natural a contenido adicional. Este contenido es un poco más largo.
-            </p>
-          </div>
-          <div class="botones">
-            <div class="btn-group btn-group-sm" role="group">
-              <button type="button" class="btn btn-outline-dark">Ver</button>
-              <button type="button" class="btn btn-outline-dark">Editar</button>
-            </div>
-            <small class="text-muted">9 minutos</small>
-          </div>
-        </div>
-      </div>
+    </form>
+    <div class="dropdown-divider"></div>
+    <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="option1">
+      <label class="custom-control-label" for="option1">
+        La dirección de envío es la misma que mi dirección de facturación
+      </label>
     </div>
-
+    <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="option2">
+      <label class="custom-control-label" for="option2">
+        Guarde esta información para la próxima vez
+      </label>
+    </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

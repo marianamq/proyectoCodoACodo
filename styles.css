@@ -1,14 +1,40 @@
 .container{
-  margin: 20px auto;
-}
-
-.card-body{
-  padding-bottom: 3px;
-}
-
-.botones{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin: 20px;
+  background:  #f2f2f2;
+  height: auto;
+  width: 500px;
   padding: 15px;
+  border-radius: 5px;
+}
+
+label{
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.form-control{
+  font-size: 14px;
+}
+
+.input-group-text{
+  font-size: 14px;
+}
+
+.form_email label {
+  display: flex;
+  height: 25px;
+  margin-top: 15px;
+}
+
+.form_email label p{
+  margin-left: 2px;
+  color: gray;
+}
+
+.custom-control-label{
+  font-size: 12px;
+}
+
+.dropdown-divider{
+  border-top: 1px solid #cccccc;
 }
